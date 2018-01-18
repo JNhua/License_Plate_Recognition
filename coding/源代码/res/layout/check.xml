@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rel_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp">
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_logo"
+            android:layout_centerHorizontal="true"
+            android:text="NJUPT"
+            android:gravity="center"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/info_check1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:gravity="center"
+        android:hint="信息一" />
+
+    <TextView
+        android:id="@+id/info_check2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:gravity="center"
+        android:hint="信息二" />
+
+    <TextView
+        android:id="@+id/info_check3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:gravity="center"
+        android:hint="信息三" />
+
+    <TextView
+        android:id="@+id/info_check4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:gravity="center"
+        android:hint="信息四" />
+
+    <TextView
+        android:id="@+id/sum_info"
+        android:layout_width="170dp"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:hint="信息五" />
+
+    <Button
+        android:id="@+id/camera_return"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="查询" />
+
+
+</LinearLayout>

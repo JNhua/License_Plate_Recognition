@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/custom_toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="25dp">
+
+        <RelativeLayout
+        android:id="@+id/rel_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp">
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo"
+                app:srcCompat="@drawable/logo" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/img_logo"
+            android:layout_centerHorizontal="true"
+            android:text="NJUPT"
+            android:gravity="center"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line_phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rel_logo"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/img_phone"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/phone"
+            app:srcCompat="@drawable/phone" />
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入手机号"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/line_phone"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/password"
+            app:srcCompat="@drawable/password" />
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="输入密码"
+            android:password="true"/>
+        <ImageView
+            android:id="@+id/password_visible"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/password_hide"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/line_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/line_password"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/img_password"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/password"
+            app:srcCompat="@drawable/password" />
+        <EditText
+            android:id="@+id/edit_confirm_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="确认密码"
+            android:password="true"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/line_pwd"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/img_address"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:src="@drawable/address"
+                android:visibility="visible"
+                app:srcCompat="@drawable/address" />
+
+            <EditText
+                android:id="@+id/school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="输入单位地址" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_getCode"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line_address"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp">
+
+        <ImageView
+            android:id="@+id/img_edit"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/edit"
+            app:srcCompat="@drawable/edit" />
+        <EditText
+            android:id="@+id/edit_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="输入验证码"
+            android:password="true"/>
+        <TextView
+            android:id="@+id/text_getCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="获取验证码"
+            android:textSize="16sp"
+            android:textColor="#0edada"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="下一步"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_bg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="21dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/text_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="已有账号，登录"
+            android:textSize="16sp"
+            android:textColor="#0edada"
+            android:background="#ffff"
+            android:gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>
